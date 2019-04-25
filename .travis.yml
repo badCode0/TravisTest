@@ -1,4 +1,10 @@
 language: go
+#script:
+# - echo hello
+#- env
+services:
+  - docekr
+
 script:
-  - echo hello
-  - env
+  - docker version
+  - docker-compose --version
